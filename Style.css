@@ -91,6 +91,7 @@ section{
 
 .home-img img{
     width: 35vw;
+    height: 41vw;
     border-radius: 10%;
     animation: floatImage 4s ease-in-out infinite;
 }
@@ -183,6 +184,7 @@ span{
 
 .about-img img{
     width: 35vw;
+    height: 41vw;
     border-radius: 10%;
 }
 
@@ -242,6 +244,7 @@ span{
 .services-box i{
     font-size: 7rem;
     color: var(--main-color);
+    height: auto;
 }
 
 .services-box h3{
@@ -276,6 +279,7 @@ span{
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    height:max-content;
 
 }
 
@@ -295,7 +299,7 @@ span{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 120%;
     background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
     display: flex;
     justify-content: center;
@@ -315,12 +319,17 @@ span{
 
 .portfolio-layer h4{
     font-size: 3rem;
+    padding-top: 10%;
+    color: #ffffff;
+   
 }
 
 
 .portfolio-layer p{
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
+    padding: 0%;
+    color: #000000;
 }
 
 
