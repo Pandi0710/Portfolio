@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="Style.css">
 </head>
@@ -64,44 +65,156 @@
 
     </section>
 
-    <section class="services" id="services">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="services-container">
-            <div class="services-box">
-            <h3 style="color:rgb(200, 255, 0);">Programming Languages</h3> <br>
-            <p>Python <br> Java <br> JavaScript <br>PHP </p>
+ <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="accent">Skills</span></h2>
+                <div class="section-divider"></div>
             </div>
-
-            <div class="services-box">
-            <h3 style="color:rgb(200, 255, 0);"> Web Development</h3> <br>
-            <p>HTML <br> CSS <br> React.js <br>Express.js <br>Node.js</p>
+            <div class="skills-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="technical"><h1>Technical Skills</h1></button>
+                    <button class="tab-btn" data-tab="soft"><h1>Soft Skills</h1></button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="technical-panel">
+                        <div class="skills-grid">
+                            <div class="skill-item animate-skill">
+                                <div class="skill-header">
+                                    <span class="skill-name">JavaScript/TypeScript </span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item animate-skill">
+                                <div class="skill-header">
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item animate-skill">
+                                <div class="skill-header">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item animate-skill">
+                                <div class="skill-header">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item animate-skill">
+                                <div class="skill-header">
+                                    <span class="skill-name">SQL/NoSQL</span>
+                                    <span class="skill-level">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item animate-skill">
+                                <div class="skill-header">
+                                    <span class="skill-name">Git/GitHub</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item animate-skill">
+                                <div class="skill-header">
+                                    <span class="skill-name">CI/CD</span>
+                                    <span class="skill-level">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item animate-skill">
+                                <div class="skill-header">
+                                    <span class="skill-name">UI/UX Design</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-level="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="soft-panel">
+                        <div class="soft-skills-grid">
+                            <div class="soft-skill-item animate-fade-in">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <h3>Problem Solving</h3>
+                            </div>
+                            <div class="soft-skill-item animate-fade-in">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h3>Communication</h3>
+                            </div>
+                            <div class="soft-skill-item animate-fade-in">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3>Teamwork</h3>
+                            </div>
+                            <div class="soft-skill-item animate-fade-in">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h3>Time Management</h3>
+                            </div>
+                            <div class="soft-skill-item animate-fade-in">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                                <h3>Adaptability</h3>
+                            </div>
+                            <div class="soft-skill-item animate-fade-in">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h3>Critical Thinking</h3>
+                            </div>
+                            <div class="soft-skill-item animate-fade-in">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <h3>Attention to Detail</h3>
+                            </div>
+                            <div class="soft-skill-item animate-fade-in">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-crown"></i>
+                                </div>
+                                <h3>Leadership</h3>
+                            </div>
+                            <div class="soft-skill-item animate-fade-in">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <h3>Creativity</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="services-box">
-            <h3 style="color:rgb(200, 255, 0);"> Database</h3> <br>
-            <p>MySQL <br> MongoDB <br> <br><br><br></p>
-            </div>
-
-            <div class="services-box">
-            <h3 style="color:rgb(200, 255, 0);"> Frameworks and UI Design</h3> <br>
-            <p>Flutter <br> Figma <br>Axure <br><br><br></p>
-            </div>
-
-            <div class="services-box">
-            <h3 style="color:rgb(200, 255, 0);">Cloud & DevOps</h3> <br>
-            <p>AWS <br>Git/Github<br><br></p>
-            </div>
-
-            <div class="services-box">
-            <h3 style="color:rgb(200, 255, 0);">Tools</h3> <br>
-            <p>VS Code <br>IntelliJ IDEA<br>Android Studio<br><br></p>
-            </div>
-
-           
-
-    
-
-    </div>
+        </div>
     </section>
 
 
@@ -114,8 +227,14 @@
                 <div class="portfolio-layer">
                     <h4>Spendo Mobile app</h4>
                     <p>AI Based Finance Management app: React-native,Node.js,Python,Firebase,MongoDB</p>
-                    <a href="https://67bbef7771d0f702bda405c1--prismatic-heliotrope-416e8a.netlify.app/" target="_blank" rel="noopener">
-                        <i class='bx bx-link-external'></i>
+                        <div class="project-links">
+                            <a href="https://67bbef7771d0f702bda405c1--prismatic-heliotrope-416e8a.netlify.app/" class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"><br>Web site</i>  
+                            </a>
+                            <a href="https://github.com/Pandi0710/Spendo-SDGP" class="project-link">
+                                <i class="fab fa-github"> Code</i>
+                            </a>
+                        </div>
                     </a>
                     
                 </div>
@@ -127,9 +246,14 @@
                 <div class="portfolio-layer">
                     <h4> Learnify</h4>
                     <p>A LMS featured with VR Classrooms: Figma, React-native, Node.js, Firebase</p>
-                    <a href="https://learnifyhci.vercel.app/" target="_blank" rel="noopener">
-                        <i class='bx bx-link-external'></i>
-                    </a>
+                     <div class="project-links">
+                            <a href="https://learnifyhci.vercel.app/" class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"><br>Web site</i>  
+                            </a>
+                            <a href="https://github.com/Pandi0710/Learnify-HCI" class="project-link">
+                                <i class="fab fa-github"> Code</i>
+                            </a>
+                    </div>
                     
                 </div>
 
@@ -139,10 +263,15 @@
                 <img src="images/Echo Echoes.webp" alt="">
                 <div class="portfolio-layer">
                     <h4>Echo Echoes</h4>
-                    <p>Shop that sells wildlife based products with knowladge</p>
-                    <a href="" target="_blank" rel="noopener">
-                        <i class='bx bx-link-external'></i>
-                    </a>
+                    <p>Shop that sells wildlife-based products with knowledge </p>
+                     <div class="project-links">
+                            <a href="https://echoechoes.vercel.app/" class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"><br>Web site</i>  
+                            </a>
+                            <a href="https://github.com/Pandi0710/Echo-Echoes" class="project-link">
+                                <i class="fab fa-github"> Code</i>
+                            </a>
+                        </div>
                     
                 </div>
 
@@ -153,9 +282,14 @@
                 <div class="portfolio-layer">
                     <h4> Plane Ticket Management </h4>
                     <p>A System to book a plane ticket: JAVA, OOP </p>
-                    <a href="https://github.com/Pandi0710/Plane-Ticket-Booking-System" target="_blank" rel="noopener">
-                        <i class='bx bx-link-external'></i>
-                    </a>
+                     <div class="project-links">
+                            <!-- <a href="" class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"><br>Web site</i>  
+                            </a> -->
+                            <a href="https://github.com/Pandi0710/Plane-Ticket-Booking-System " class="project-link">
+                                <i class="fab fa-github"> Code</i>
+                            </a>
+                        </div>
                     
                 </div>
 
@@ -168,9 +302,14 @@
                 <div class="portfolio-layer">
                     <h4>Cinema Ticket Management </h4>
                      <p>Ticket booking system that can book a seat and can see the details for the user for verification</p>
-                    <a href="https://github.com/Pandi0710/EventTicketSystem/tree/main" target="_blank" rel="noopener">
-                        <i class='bx bx-link-external'></i>
-                    </a>
+                     <div class="project-links">
+                            <!-- <a href=" " class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"><br>Web site</i>  
+                            </a> -->
+                            <a href="https://github.com/Pandi0710/EventTicketSystem " class="project-link" target="_blank" rel="noopener">
+                                <i class="fab fa-github"> Code</i>
+                            </a>
+                    </div>
                     
                 </div>
 
@@ -182,9 +321,14 @@
                 <div class="portfolio-layer">
                     <h4>Ticket Management System</h4>
                     <p>System that sellers and buyers can enroll together </p>
-                    <a href="https://github.com/Pandi0710/Ticket-Management-for-Buyers-and-Sellers" target="_blank" rel="noopener">
-                        <i class='bx bx-link-external'></i>
-                    </a>
+                    <div class="project-links">
+                            <!-- <a href=" " class="project-link" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"><br>Web site</i>  
+                            </a> -->
+                            <a href="https://github.com/Pandi0710/Ticket-Management-for-Buyers-and-Sellers" class="project-link" target="_blank" rel="noopener">
+                                <i class="fab fa-github"> Code</i>
+                            </a>
+                    </div>
                     
                 </div>
             </div>
